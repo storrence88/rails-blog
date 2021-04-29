@@ -1,0 +1,12 @@
+<% @posts.each do |post| %>
+  <%= link_to [:edit, post], class: 'text-decoration-none' do %>
+    <div class="card mb-3">
+      <div class="card-body">
+        <h5 class="card-title text-dark mb-1">
+          <%= post.title %>
+        </h5>
+        <p class='text-secondary mb-0'><%= post.description %></p>
+      </div>
+    </div>
+  <% end %>
+<% end %>
