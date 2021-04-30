@@ -2,7 +2,7 @@
 
 module Authors
   class PostsController < AuthorsController
-    before_action :set_post, only: %i[show edit update destroy]
+    before_action :set_post, only: %i[edit update destroy]
 
     # GET /posts or /posts.json
     def index
